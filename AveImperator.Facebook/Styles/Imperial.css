@@ -1,0 +1,89 @@
+﻿body 
+{
+  background: #fff;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left; 
+}
+
+h1, h2, h3, h4, h5 { font-size: 13px; color: #333; margin: 0px; padding: 0px; }
+
+h1 { font-size: 14px; }
+
+h4, h5 { font-size: 11px; }
+
+p { font-family: "lucida grande", tahoma, verdana, arial, sans-serif; font-size: 11px; text-align: left; }
+
+a { color: #3b5998; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+img { border: 0px; }
+
+select, input { border:1px solid #BDC7D8; font-family:"lucida grande",tahoma,verdana,arial,sans-serif; font-size:11px; padding:2px; }
+
+td, td.label { font-size: 11px; text-align: left; }
+
+
+/*  ------------------------------|  FORMS  |-------------------------------  */
+
+form { margin: 0px; padding: 0px; }
+
+/* DO NOT REMOVE cursor: pointer without talking to rgrover */
+/* This is required for correct label behavior in Safari 2  */
+label { cursor: pointer; color: #666666; font-weight: bold; }
+
+label input { font-weight: normal; }
+
+.formtable { margin: 0px auto; }
+
+.formtable { margin: 0px; }
+
+.formtable td { border: none; margin: 0px; padding: 3px 1px; }
+
+.formtable td.label { color: #666666; font-weight: bold; padding-right: 10px; }
+
+.formtable tr.tallrow { vertical-align: top; }
+
+.formbuttons { text-align: center; margin: 10px 10px; }
+
+.formbuttons .inputsubmit, .formbuttons .inputbutton { margin: 2px 4px; }
+
+.formbuttons .securetoggle { padding: 9px 0px 0px 0px; }
+
+/*  FORM INPUTS  */
+
+.inputtext, .inputpassword { border: 1px solid #bdc7d8; font-family: "lucida grande", tahoma, verdana, arial, sans-serif; font-size: 11px; padding: 3px; }
+
+textarea { border: 1px solid #bdc7d8; padding: 3px; font-size: 11px; font-family: "lucida grande", tahoma, verdana, arial, sans-serif; }
+
+.inputbutton, .inputsubmit 
+{
+  padding: 2px 15px 3px 15px;
+  border-style: solid;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-top-color: #D9DFEA;
+  border-left-color: #D9DFEA;
+  border-bottom-color: #0e1f5b;
+  border-right-color: #0e1f5b;
+  background-color: #3b5998;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  text-align: center; 
+}
+
+.inputaux { background: #f0f0f0; color: #000; border-top-color: #e7e7e7; border-right-color: #666; border-bottom-color: #666; border-left-color: #e7e7e7; }
+
+.inputcheckbox { border: 0px; }
+
+.inputsearch { background: white url(/images/magglass.png) no-repeat 3px 4px; padding-left: 17px; }
+
+.inputsearch_B { background: white; padding-left: 2px; }
+
+.transparent_png_ie6 { display: none; }

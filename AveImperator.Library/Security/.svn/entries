@@ -1,0 +1,52 @@
+8
+
+dir
+121
+svn://199.44.81.171/AveImperator/AveImperator.Library/Security
+svn://199.44.81.171
+
+
+
+2007-12-14T15:48:21.742305Z
+117
+travis
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+50cd0b83-8edd-412c-ba26-df90f327a25d
+
+AIPrincipal.cs
+file
+
+
+
+
+2007-12-14T08:15:21.265625Z
+f9d52a1077e7b83b98b6260d73fbbe35
+2007-12-14T15:48:21.742305Z
+117
+travis
+
+AIIdentity.cs
+file
+136
+
+
+
+2007-12-18T19:01:21.426500Z
+ee7f663d0f2d955edc90750c04b88256
+2007-12-18T23:47:09.767460Z
+136
+travis
+

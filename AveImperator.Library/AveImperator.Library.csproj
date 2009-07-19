@@ -1,0 +1,87 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE7A7CAA-B080-43A8-A4EF-53157B9FC053}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AveImperator.Library</RootNamespace>
+    <AssemblyName>AveImperator.Library</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action.cs" />
+    <Compile Include="ActionList.cs" />
+    <Compile Include="Armor.cs" />
+    <Compile Include="ArmorList.cs" />
+    <Compile Include="Battle.cs" />
+    <Compile Include="BattleCommand.cs" />
+    <Compile Include="BattleList.cs" />
+    <Compile Include="Challenge.cs" />
+    <Compile Include="ChallengeList.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="CityList.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Diet.cs" />
+    <Compile Include="DietList.cs" />
+    <Compile Include="Gladiator.cs" />
+    <Compile Include="GladiatorClass.cs" />
+    <Compile Include="GladiatorClassList.cs" />
+    <Compile Include="GladiatorList.cs" />
+    <Compile Include="God.cs" />
+    <Compile Include="GodList.cs" />
+    <Compile Include="Maneuver.cs" />
+    <Compile Include="ManeuverList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Race.cs" />
+    <Compile Include="RaceList.cs" />
+    <Compile Include="Security\AIIdentity.cs" />
+    <Compile Include="Security\AIPrincipal.cs" />
+    <Compile Include="Tactic.cs" />
+    <Compile Include="TacticList.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserList.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponList.cs" />
+    <Compile Include="Winning.cs" />
+    <Compile Include="WinningList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Csla\Csla.csproj">
+      <Project>{9DA591ED-C570-47AC-8E5D-35B039E07973}</Project>
+      <Name>Csla</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

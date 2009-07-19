@@ -1,0 +1,80 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <style type="text/css">
+        body { background: #fff; font-family: "lucida grande", tahoma, verdana, arial, sans-serif; font-size: 11px; margin: 0px; padding: 0px; text-align: left; }
+        h1, h2, h3, h4, h5 { font-size: 13px; color: #333; margin: 0px; padding: 0px; }
+        h1 { font-size: 14px; }
+        h1.title { font-size: 16px; color: rgb(30,50,130); border-bottom: 1px solid rgb(200,200,200); padding-bottom: 3px; margin: 10px 0 5px 3px; }
+        h4, h5 { font-size: 11px; }
+        p { font-family: "lucida grande", tahoma, verdana, arial, sans-serif; font-size: 11px; text-align: left; }
+        a { color: #3b5998; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { border: 0px; }
+        select, input { border:1px solid #BDC7D8; font-family:"lucida grande",tahoma,verdana,arial,sans-serif; font-size:11px; padding:2px; }
+        tr { vertical-align: top; }
+        td, td.label { font-size: 11px; text-align: left; }    
+        /*  ------------------------------|  FORMS  |-------------------------------  */
+        form { margin: 0px; padding: 0px; }
+        label { cursor: pointer; color: #666666; font-weight: bold; }
+        label input { font-weight: normal; }
+        .formtable { margin: 0px auto; }
+        .formtable { margin: 0px; }
+        .formtable td { border: none; margin: 0px; padding: 3px 1px; }
+        .formtable td.label { color: #666666; font-weight: bold; padding-right: 10px; }
+        .formtable tr.tallrow { vertical-align: top; }
+        .inputbutton, .inputsubmit 
+        {
+          padding: 2px 15px 3px 15px;
+          border-style: solid;
+          border-top-width: 1px;
+          border-left-width: 1px;
+          border-bottom-width: 1px;
+          border-right-width: 1px;
+          border-top-color: #D9DFEA;
+          border-left-color: #D9DFEA;
+          border-bottom-color: #0e1f5b;
+          border-right-color: #0e1f5b;
+          background-color: #3b5998;
+          color: #FFFFFF;
+          font-size: 11px;
+          font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+          text-align: center; 
+        }        
+        .contentbox { border:1px solid rgb(60,90,150);padding:2px; }
+        .contentboxtitle { background-color:rgb(60,90,150);padding:2px 1px 2px 3px;font-size:12px;color:rgb(255,255,255);font-weight:bold; }
+        .grid {background-color:rgb(230,235,255);border:1px solid rgb(200,205,225);}
+        .grid td,.grid th { padding:1px 1px 1px 2px;}
+        .grid th { background-color:rgb(110,130,180);color:rgb(255,255,255);}
+        .grid th a { color:rgb(255,255,255); }
+        .grid th a:hover { text-decoration:none;}
+        .microbutton { width:71px; height:13px; display:block; filter: alpha(opacity=75);opacity:0.75; }
+        .microbutton:hover { filter: alpha(opacity=100);opacity:1;}
+        .fadeelement { alpha(opacity=70);opacity:0.7; }
+        .fadeelement:hover { alpha(opacity=100);opacity:1;text-decoration:none;color:rgb(0,0,0); }
+    </style>
+
+    <link rel="stylesheet" type="text/css" media="screen,projection,print" href="/Styles/Imperial.css" />
+    <title>Ave Imperator</title>
+</head>
+<body>
+    <form id="MainForm" runat="server">
+    <asp:ScriptManager ID="AveScriptManager" runat="server" AsyncPostBackTimeout="120" />
+    <fb:FacebookApplication ID="AveFacebookApplication" Mode="IFrame" ApplicationName="aveimperator" runat="server" EnableExternalBrowsing="true" />
+    <div>
+        <asp:Panel ID="MenuStrip" runat="server" style="background-color: rgb(215,220,235); width: 630px;border: 1px solid rgb(80,110,170);margin-top:1px;text-align:center;padding:3px 0 2px 0;">
+            <asp:LinkButton ID="ProfileLink" runat="server" CommandArgument="viewgladiator.aspx" Text="Profile" /> |
+            <asp:LinkButton ID="ArenaLink" runat="server" CommandArgument="arena.aspx" Text="Arena" /> |
+            <asp:LinkButton ID="RecordLink" runat="server" CommandArgument="record.aspx" Text="Record" /> |
+            Legacy | Equip | Train | Gamble | Tavern | 
+            <asp:LinkButton ID="RulesLink" runat="server" CommandArgument="rules.aspx" Text="Rules" /> |
+        </asp:Panel>
+        <asp:contentplaceholder id="MainContent" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>
